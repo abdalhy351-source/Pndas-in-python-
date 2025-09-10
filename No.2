@@ -1,0 +1,63 @@
+import pandas as pd
+values = [10 , 20 , 30 , 40 , 50]
+s = pd.Series(values)
+print(s)
+
+
+
+
+
+import pandas as pd
+
+df=pd.DataFrame({
+'Name' :  ['Mike', 'Alice','Bob'],
+'Age' :  [30,50,21],
+'Job' : ['Dentist', 'Driver', 'Student']
+})
+print(df)
+
+
+
+
+
+
+
+
+
+
+import pandas as pd
+values = [10 , 20 , 30 , 40 , 50]
+s = pd.Series(values, index=[ 'a' , 'b', 'c','d','e'])
+print(s)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import pandas as pd  
+
+data = {
+    "Name": ["Ali", "Sara", "Reza", "Niloofar"],
+    "Age": [20, 22, 19, 21],
+    "Score": [85, 90, 78, 92]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+print(df["Name"])
+print(df["Score"].mean())
+
+
+
