@@ -1,0 +1,49 @@
+#it is the continue of the No.5
+#for info 
+df.frame.info()
+#and 
+df.frame.describe()
+#for watching just one column ,(here HouseAge is a column)
+df.frame.HouseAge
+#or
+df.frame['HouseAge'].mean()
+#and
+df.frame['HouseAge'].max()
+#you can use min too or std (standard deviation)
+df.frame['HouseAge'].median()
+#and mode too , for repeated stuff and count for real info it gives you all the data without none data and shift usefull in fynance 
+#and heyyyy i got some points 
+df = pd.DataFrame({
+    'score': [10, 20, 30, 40, 50],
+    'age': [25, 30, 35, 40, 45]
+})
+
+medians = df.median()
+print(medians)
+#mod
+import pandas as pd
+
+df = pd.DataFrame({
+    'score': [10, 20, 20, 30, 40, 50, 20]
+})
+
+mode_value = df['score'].mode()
+print(mode_value)
+#count
+df = pd.DataFrame({
+    'score': [10, 20, None, 30, 40, None, 50],
+    'age':   [25, 30, 35, None, 40, 45, 50]
+})
+
+counts = df.count()
+print(counts)
+#shift
+
+df = pd.DataFrame({
+    'price': [100, 105, 110, 120, 115]
+})
+
+df['yesterday'] = df['price'].shift(1)
+df['change'] = df['price'] - df['yesterday']
+
+print(df)
