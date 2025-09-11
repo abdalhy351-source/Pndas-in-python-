@@ -1,0 +1,19 @@
+#so if we made a list and just wanna see a spcial part , for example:
+    import pandas as pd
+    from sklearn.datasets import fetch_california_housing
+    df=fetch_california_housing(as_frame=True)
+    #it was the main part 
+    display(df.frame.head())
+    #you can put a number in head()
+    display(df.frame.tail())
+    #this one too
+    display(df.frame.columns.tolist())
+    #for dictionary
+    display(df.frame-dict())
+    #and
+    display(df.frame.to_json)
+    #for reading
+    display(df.frame)
+    #for making a csv file 
+    df.frame.to_json(california_housing.json)
+    
