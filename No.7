@@ -1,0 +1,17 @@
+#if u want to see the chart
+import pandas as pd
+from sklearn.datasets import fetch_california_housing
+df=fetch_california_housing(as a frame=True)
+df.frame['HouseAge'].hist()
+#and for detail# plot histogram with custom size
+import pandas as pd
+df.hist(figsize=(10,6))
+df.frame['HouseAge'].hist(figsize=(14,7))
+plt.title(House Age)
+plt.show()
+#layout
+import pandas as pd
+df.frame.hist(figsize=(12,5))
+plt.tight.layout()
+plt.show()
+
